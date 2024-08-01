@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agent</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <header>
+            <div class="icon">Travelku</div>
+        </header>
+        <div class="navigation">
+            <a class="nav-item" href="#home">Home</a>
+            <a class="nav-item" href="#packages">Our Package</a>
+            <a class="nav-item" href="#call-us">Call Us</a>
+        </div>
+    </nav>
+
+    <main id="home">
+        <!-- artikel -->
+        <article class="article">
+            <h1>Your Trusted Travel Agent</h1>
+            <p>Your happiness is our happiness</p>
+        </article>
+
+        <!-- review -->
+        <section class="slide">
+            <div class="slide-wrapper">
+                <div class="slide-item">
+                    <div class="review-container">
+                        <!-- review pic -->
+                        <img class="post" src="img/bali-tg.png" alt="bali">
+                        <!-- review text -->
+                        <div>
+                            <i>"Liburan jadi menyanangkan bersama Travelku"</i>
+                        </div>
+                        <!-- reviewer -->
+                        <div class="reviewer">
+                            <!-- profile pic -->
+                            <img class="profile-pict" src="img/profilepict.png">
+                            <!-- reviewer detail -->
+                            <p>Dinda -</p>
+                            <i>Ibu rumah tangga</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="review-container">
+                        <!-- review pic -->
+                        <img class="post" src="img/bandung.jpeg" alt="bandung">
+                        <!-- review text -->
+                        <div>
+                            <i>"lebih nyaman ke bandung sama Travelku"</i>
+                        </div>
+                        <!-- reviewer -->
+                        <div class="reviewer">
+                            <!-- profile pic -->
+                            <img class="profile-pict" src="img/profilepict.png">
+                            <!-- reviewer detail -->
+                            <p>Diana -</p>
+                            <i>Pegawai bank</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="review-container">
+                        <!-- review pic -->
+                        <img class="post" src="img/japan.jpeg" alt="japan">
+                        <!-- review text -->
+                        <div>
+                            <i>"Gausah bingung mau keluar negeri, dengan Travelku semua beres"</i>
+                        </div>
+                        <!-- reviewer -->
+                        <div class="reviewer">
+                            <!-- profile pic -->
+                            <img class="profile-pict" src="img/profilepict.png">
+                            <!-- reviewer detail -->
+                            <p>Herman -</p>
+                            <i>Dosen</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <article class="benefit">
+            <p>Berikut adalah beberapa keunggulan dari kami</p>
+            <p class="benefit-item">1. Perjalanan dilengkapi asuransi</p>
+            <p class="benefit-item">2. layanan 24 jam</p>
+            <p class="benefit-item">3. Harga terjangkau</p>
+        </article>
+        <!-- form -->
+        <div class="contact-us" id="call-us">
+            <h3>Contact Us</h3>
+            <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input id="name" type="text" placeholder="First and Last Name" required/>
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="example@email.com" required/>
+                <label for="options">What are you interested in?</label>
+                <select id="options" required>
+                    <option value="" disabled selected hidden>Select option</option>
+                    <option value="Bali">Bali</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Surabaya">Surabaya</option>
+                </select>
+                <button class="submit-button" type="submit">Submit</button>
+            </form>
+            <div id="form-message"></div>
+        </div>
+    </main>
+
+    <div class="package" id="packages">
+        <header>Our Package</header>
+        <div class="package-item">
+            <h3>Bali</h3>
+            <p>Travel dari wisata di Bali. Kunjungi cagar budaya dan kuliner menarik</p>
+        </div>
+        <div class="package-item">
+            <h3>Japan</h3>
+            <p>Travel dari wisata di Japan. Kunjungi cagar budaya dan kuliner menarik</p>
+        </div>
+        <div class="package-item">
+            <h3>Singapore</h3>
+            <p>Travel dari wisata di Singapore. Kunjungi cagar budaya dan kuliner menarik</p>
+        </div>
+        <div class="package-item">
+            <h3>Bandung</h3>
+            <p>Travel dari wisata di Bandung. Kunjungi cagar budaya dan kuliner menarik</p>
+        </div>
+        <div class="package-item">
+            <h3>Surabaya</h3>
+            <p>Travel dari wisata di Surabaya. Kunjungi cagar budaya dan kuliner menarik</p>
+        </div>
+    </div>
+    
+    <div class="call-us">
+        <h1>Call Us</h1>
+        <p>Untuk info lebih lanjut, klik tombol dibawah ini untuk menghubungi kami</p>
+        <button class="call-us-button">Call Us</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
