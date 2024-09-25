@@ -34,10 +34,15 @@ header {
 nav {
     background-color: #ffffff; 
     border-bottom: 2px solid #3D5B59;
-    padding: 0.5rem 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Pastikan navigasi tetap di atas elemen lainnya */
 }
 
 .navigation {
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 0.5rem;
@@ -50,11 +55,12 @@ nav {
 
 main {
     padding: 2rem;
-    background-color: #ffffff; /* White background for main content */
+    background-color: #e6e6e6; 
     margin: 1rem auto;
     max-width: 1200px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px; /* Sesuaikan ini agar tidak tertutup oleh nav */
 }
 
 .article {
@@ -163,14 +169,24 @@ input:focus, select:focus {
 }
 
 .submit-button {
-    background-color: #3D5B59; 
+    background-color: #325ebd; 
     color: #fff;
     border: none;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
 }
 
 .submit-button:hover {
     background-color: #0056b3; 
+}
+
+.package-header {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .package {
@@ -179,10 +195,20 @@ input:focus, select:focus {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
+    
+    display: flex;
+    flex-wrap: wrap; /* Agar item turun ke baris berikutnya jika space tidak cukup */
+    justify-content: space-between; /* Beri ruang antar item secara merata */
 }
 
 .package-item {
+    background-color: #f4f4f4; /* Tambahkan warna latar untuk box */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
+    width: 48%; /* Setengah dari lebar container, dengan space antar item */
+    box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
 }
 
 .call-us {
@@ -226,5 +252,3 @@ input:focus, select:focus {
     padding: 1rem;
     flex-shrink: 0; 
 }
-
-
